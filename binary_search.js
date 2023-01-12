@@ -1,15 +1,15 @@
-function binary_search(sortedArray,key)
+function binary_search(array,key)
 {
         let start = 0;
-        let end = sortedArray.length - 1;
+        let end = array.length - 1;
     
         while (start <= end) 
         {
             let middle = Math.floor((start + end) / 2);
     
-            if (sortedArray[middle] === key)
+            if (array[middle] === key)
                     return middle; 
-            else if (sortedArray[middle] < key) 
+            else if (array[middle] < key) 
                 start = middle + 1;
             else
                 end = middle - 1;
